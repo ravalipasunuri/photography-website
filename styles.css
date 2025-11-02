@@ -1,0 +1,451 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header #logo {
+    width: 100px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Gallery Section */
+#gallery {
+    background-image: url('https://i.ibb.co/NL3qFdD/dark-nature-rj2zws3ww99n2jzb.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Pricing Section */
+#pricing {
+    background-image: url('https://i.ibb.co/0F2DQ5f/download-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    color: #333;
+}
+
+.pricing-card h3 {
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.cta-button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+/* Payment Section */
+#payment {
+    background-image: url('https://i.ibb.co/LdmgQ4Q/images.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+}
+
+#payment-header h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.payment-option {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.payment-option h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.payment-option p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.payment-button {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+    background-color: #e67e22;
+}
+
+/* Contact Section */
+#contact a img {
+    margin: 0 10px;
+}
+/* Payment Section */
+#payment {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#payment h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#payment p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#selected-plan {
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+}
+
+.payment-options {
+    margin: 20px 0;
+}
+
+.payment-options label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.payment-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Credit Card Payment Info */
+#credit-card-info {
+    display: block;
+    margin-top: 30px;
+    text-align: left;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+#credit-card-info input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+#proceed-payment-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#proceed-payment-button:hover {
+    background-color: #218838;
+}
+
+/* PhonePe Scanner Section */
+#phonepe-scanner {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#phonepe-scanner img {
+    width: 100%;
+    max-width: 250px;
+}
+
+#confirm-payment-button {
+    background-color: #ffcd00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#confirm-payment-button:hover {
+    background-color: #e6b800;
+}
+
+/* Back Button to Pricing */
+#back-to-pricing-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+#back-to-pricing-button:hover {
+    background-color: #0056b3;
+} 
+/* General Section Styling */
+#contact {
+    background-color: #f0f4f8; /* Light background */
+    padding: 40px;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    margin: 0; /* Remove any default margin */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #4f4f4f;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+#contact a {
+    color: #9b79c5; /* Elegant purple color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #6f4fbb;
+}
+
+/* Instagram and WhatsApp Icons */
+.contact-icons {
+    margin: 20px 0;
+}
+
+.contact-icon {
+    margin: 0 15px;
+    color: #9b79c5;
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+    color: #6f4fbb;
+}
+
+/* Contact Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width */
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #4f4f4f;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    font-size: 14px;
+    background-color: #fff;
+    color: #4f4f4f;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #9b79c5; /* Focus color */
+    outline: none;
+}
+
+#submit-btn {
+    padding: 12px 25px;
+    background-color: #9b79c5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #6f4fbb;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #contact {
+        padding: 20px;
+    }
+
+    .contact-icon {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+}
+
+#payment {
+    display: none;
+}

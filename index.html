@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSV Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="https://i.ibb.co/mXxnXfc/logo.jpg" alt="RSV Photography" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" style="background-image: url('https://i.ibb.co/dQkk3Cs/premium-photo-1673151333880-ba1ac4f026cd.jpg');">
+        <div class="hero-text">
+            <h2>Capturing Moments, Creating Memories</h2>
+            <p>Professional Photography for All Occasions</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <p>Explore some of our best work from weddings, events, and photoshoots.</p>
+            <div class="gallery-container">
+                <img src="https://i.ibb.co/tCrDn4d/1600w-Ihp-A4-UHJw3-U.webp" alt="Sample Photo 1">
+                <img src="https://i.ibb.co/fFLGSkJ/desktop-wallpaper-greentree-for-ultra-tv-green-tree.jpg" alt="Sample Photo 2">
+                <img src="https://i.ibb.co/m6bPnz9/images.jpg" alt="Sample Photo 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Our Pricing Plans</h2>
+            <p>Choose a plan that fits your needs. Whether it's a simple photoshoot or a full wedding event, we have the right package for you.</p>
+
+            <div class="pricing-cards">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3>Basic Plan</h3>
+                    <p class="price">₹5000</p>
+                    <ul>
+                        <li>1 Hour Photoshoot</li>
+                        <li>10 Edited Photos</li>
+                        <li>Online Gallery</li>
+                    </ul>
+                    <a href="javascript:void(0);" class="cta-button" data-plan="Basic Plan">Select Plan</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <h3>Premium Plan</h3>
+                    <p class="price">₹10000</p>
+                    <ul>
+                        <li>3 Hour Photoshoot</li>
+                        <li>30 Edited Photos</li>
+                        <li>Online Gallery + Album</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a href="javascript:void(0);" class="cta-button" data-plan="Premium Plan">Select Plan</a>
+                </div>
+
+                <!-- Event Plan -->
+                <div class="pricing-card">
+                    <h3>Event Plan</h3>
+                    <p class="price">₹20000</p>
+                    <ul>
+                        <li>Full Day Photoshoot</li>
+                        <li>50 Edited Photos</li>
+                        <li>Online Gallery + Album</li>
+                        <li>24/7 Support</li>
+                        <li>Video Coverage</li>
+                    </ul>
+                    <a href="javascript:void(0);" class="cta-button" data-plan="Event Plan">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment">
+        <h2>Confirm Your Payment</h2>
+        <p>You've selected the <span id="selected-plan"></span> plan. Please proceed with payment.</p>
+        <div class="payment-options">
+            <label>
+                <input type="radio" name="payment-method" value="credit-card" checked> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="phonepe"> PhonePe
+            </label>
+        </div>
+
+        <!-- Credit Card Payment Details -->
+        <div id="credit-card-info">
+            <input type="text" placeholder="Card Number" id="card-number" required>
+            <input type="text" placeholder="Cardholder Name" id="card-name" required>
+            <input type="number" placeholder="CVV" id="card-cvv" required>
+            <button class="cta-button" id="proceed-payment-button">Proceed with Credit Card</button>
+        </div>
+
+        <!-- PhonePe Scanner -->
+        <div id="phonepe-scanner" style="display: none;">
+            <img src="https://i.ibb.co/HDvrfr2/Screenshot-20241203-200351.jpg" alt="PhonePe Scanner">
+            <p>Scan the QR code to pay via PhonePe</p>
+            <button class="cta-button" id="confirm-payment-button">I Paid</button>
+        </div>
+
+        <!-- Back Button to return to Pricing -->
+        <button id="back-to-pricing-button">Back to Pricing</button>
+    </section>
+
+    <!-- Transaction ID Section -->
+    <section id="transaction-id" style="display:none;">
+        <h2>Enter Transaction ID</h2>
+        <p>Please enter the transaction ID for verification to complete your payment.</p>
+        <input type="text" placeholder="Transaction ID" id="transaction-id-input" required>
+        <button class="cta-button" id="verify-transaction-button">Verify Transaction</button>
+    </section>
+
+    <!-- Updated Payment Confirmation Section -->
+    <section id="payment-confirmation" style="display:none;">
+        <h2>Payment Successful!</h2>
+        <p>Thank you for your purchase. You have selected the <span id="payment-method-confirmation"></span> payment method.</p>
+        <p>Your payment has been processed successfully for the <span id="selected-plan-confirmation"></span> plan.</p>
+        <button class="back-button" onclick="window.location.href = '/';">Go to Homepage</button>
+    </section>
+<!-- Contact Form -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <!-- Existing Contact Information -->
+    <p>Email: <a href="mailto:RSVworld@gmail.com">RSVworld@gmail.com</a></p>
+    <p>Phone: <a href="tel:+9347216335">+91-7207481977</a></p>
+
+    <!-- Instagram and WhatsApp icons using Font Awesome -->
+    <div class="contact-icons">
+        <a href="https://www.instagram.com/rsv_world_/" target="_blank">
+            <i class="fab fa-instagram contact-icon"></i>
+        </a>
+        <a href="https://wa.me/7207481977" target="_blank">
+            <i class="fab fa-whatsapp contact-icon"></i>
+        </a>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contact-form" action="https://formspree.io/f/xovqrnow" method="POST">
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit-btn">Send Message</button>
+        </div>
+    </form>
+</section>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
